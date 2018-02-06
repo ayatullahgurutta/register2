@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
 		"X-Mesosfer-AppId": "tzVOewKnss",
 		"X-Mesosfer-AppKey": "ACNRwDdYOzGekYkDPbd1ffNpEPH0nr8J"
 	  }}).subscribe(
-   		(data: Response) => {
-      	  this.userlist = data.results;
+   		(data) => {
+          this.userlist = data['results'];
       	}
       );
   }
